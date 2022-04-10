@@ -8,12 +8,12 @@ print(dict)
 dict2 = {}
 while(1):
     for i in dict.keys():
-        min = i
+        max = i
         for j in dict.keys():
             if j not in dict2.keys():
-                if(dict[min] <= dict[j]):
-                    min=j
-        dict2[min]=dict[min]
+                if(dict[max] <= dict[j]):
+                    max=j
+        dict2[max]=dict[max]
     if(len(dict2) == len(dict)):
         break
 
